@@ -27,11 +27,13 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 private:
+
 	const float min_agentSpeed = 150.0f;
 	const float max_agentSpeed = 600.0f;
 
-	UPROPERTY(EditAnywhere, Category = "Patrol", meta = (ClampMin = min_agentSpeed, ClampMax = max_agentSpeed,
-		UIMin = min_agentSpeed, UIMax = max_agentSpeed))
+	//There are issues with pre-processor commands here, not even setting pre-processor expressions can stop magic numbers
+	UPROPERTY(EditAnywhere, Category = "Patrol", meta = (ClampMin = 150.0f, ClampMax = 600.0f,
+		UIMin = 150.0f, UIMax = 600.0f))
 		float max_patrolSpeed;
 
 };
