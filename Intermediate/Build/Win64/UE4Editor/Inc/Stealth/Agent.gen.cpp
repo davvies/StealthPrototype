@@ -32,9 +32,9 @@ void EmptyLinkFunctionForGeneratedCodeAgent() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PatrolSpeed_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_max_patrolSpeed_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_PatrolSpeed;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_max_patrolSpeed;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -51,18 +51,20 @@ void EmptyLinkFunctionForGeneratedCodeAgent() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAgent_Statics::NewProp_PatrolSpeed_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAgent_Statics::NewProp_max_patrolSpeed_MetaData[] = {
 		{ "Category", "Patrol" },
-		{ "ClampMax", "600.0" },
-		{ "ClampMin", "150.0" },
+		{ "ClampMax", "600.000000" },
+		{ "ClampMin", "150.000000" },
+		{ "Comment", "//There are issues with pre-processor commands here, not even setting pre-processor expressions can stop magic numbers\n" },
 		{ "ModuleRelativePath", "Agent.h" },
-		{ "UIMax", "600.0" },
-		{ "UIMin", "150.0" },
+		{ "ToolTip", "There are issues with pre-processor commands here, not even setting pre-processor expressions can stop magic numbers" },
+		{ "UIMax", "600.000000" },
+		{ "UIMin", "150.000000" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAgent_Statics::NewProp_PatrolSpeed = { "PatrolSpeed", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAgent, PatrolSpeed), METADATA_PARAMS(Z_Construct_UClass_AAgent_Statics::NewProp_PatrolSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAgent_Statics::NewProp_PatrolSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAgent_Statics::NewProp_max_patrolSpeed = { "max_patrolSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAgent, max_patrolSpeed), METADATA_PARAMS(Z_Construct_UClass_AAgent_Statics::NewProp_max_patrolSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAgent_Statics::NewProp_max_patrolSpeed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAgent_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAgent_Statics::NewProp_PatrolSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAgent_Statics::NewProp_max_patrolSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AAgent_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AAgent>::IsAbstract,
@@ -91,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeAgent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAgent, 2507346240);
+	IMPLEMENT_CLASS(AAgent, 2433507278);
 	template<> STEALTH_API UClass* StaticClass<AAgent>()
 	{
 		return AAgent::StaticClass();

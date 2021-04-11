@@ -58,7 +58,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAgent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AAgent)
 
 
-#define Stealth_Source_Stealth_Agent_h_12_PRIVATE_PROPERTY_OFFSET
+#define Stealth_Source_Stealth_Agent_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__max_patrolSpeed() { return STRUCT_OFFSET(AAgent, max_patrolSpeed); }
+
+
 #define Stealth_Source_Stealth_Agent_h_9_PROLOG
 #define Stealth_Source_Stealth_Agent_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
