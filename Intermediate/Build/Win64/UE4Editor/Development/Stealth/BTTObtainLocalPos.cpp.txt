@@ -1,0 +1,138 @@
+C:\Users\Davie\Documents\Tools_and_Middleware_CW2\CW2\Stealth\Intermediate\Build\Win64\UE4Editor\Development\Stealth\Definitions.Stealth.h
+C:\Users\Davie\Documents\Tools_and_Middleware_CW2\CW2\Stealth\Source\Stealth\BTTObtainLocalPos.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/Tasks/BTTask_BlackboardBase.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTTaskNode.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTNode.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BehaviorTreeTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTreeTypes.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BehaviorTreeComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTags\Classes\GameplayTagContainer.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTags\GameplayTagContainer.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\AITypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavFilters/NavigationQueryFilter.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavAreas/NavArea.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavAreaBase.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavAreaBase.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavArea.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationQueryFilter.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystemTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\AI/NavigationSystemConfig.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationSystemConfig.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITypes.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BrainComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\AIResourceInterface.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIResourceInterface.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BrainComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTreeComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BlackboardAssetProvider.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardAssetProvider.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTasks\Classes\GameplayTaskOwnerInterface.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTasks\Public\GameplayTaskTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTasks\GameplayTaskOwnerInterface.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\Tasks/AITask.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\GameplayTasks\Classes\GameplayTask.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/WeakInterfacePtr.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTasks\GameplayTask.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITask.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTNode.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTTaskNode.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTTask_BlackboardBase.generated.h
+C:\Users\Davie\Documents\Tools_and_Middleware_CW2\CW2\Stealth\Intermediate\Build\Win64\UE4Editor\Inc\Stealth\BTTObtainLocalPos.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BlackboardComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/Blackboard/BlackboardKeyType.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardKeyType.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\AISystem.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\AI/AISystemBase.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AISystemBase.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AISystem.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BlackboardData.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardData.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime/NavigationSystem/Public/NavigationSystem.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavigationData.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavigationDataInterface.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationDataInterface.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationData.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavigationOctree.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavigationOctreeController.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\NavigationSystem\Public\NavigationDirtyAreasController.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Math/MovingWindowAverageFast.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\UnrealEdMisc.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\Editor.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Classes\Editor/EditorEngine.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Classes\Editor/Transactor.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Serialization/ArchiveSerializedPropertyChain.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\Transactor.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Classes\Settings/LevelEditorViewportSettings.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\Viewports.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Classes\Editor/UnrealEdTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\UnrealEdTypes.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\LevelEditorViewportSettings.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetPlatform.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetDevice.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Developer\TargetPlatform\Public\Interfaces/TargetDeviceId.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetPlatformManagerModule.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\PlayInEditorDataTypes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\PlayInEditorDataTypes.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\EditorSubsystem\Public\EditorSubsystem.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\EditorSubsystem\EditorSubsystem.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\EditorEngine.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Editor\UnrealEd\Public\Subsystems/ImportSubsystem.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ImportSubsystem.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationSystem.generated.h
+C:\Users\Davie\Documents\Tools_and_Middleware_CW2\CW2\Stealth\Source\Stealth\Agent_Controller.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\AIController.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\Navigation/PathFollowingComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/NavMovementComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\AI/Navigation/PathFollowingAgentInterface.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PathFollowingAgentInterface.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavMovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\PathFollowingComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\Perception/AIPerceptionListenerInterface.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIPerceptionListenerInterface.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\GenericTeamAgentInterface.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\GenericTeamAgentInterface.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Public\VisualLogger/VisualLoggerDebugSnapshotInterface.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\VisualLoggerDebugSnapshotInterface.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIController.generated.h
+C:\Users\Davie\Documents\Tools_and_Middleware_CW2\CW2\Stealth\Intermediate\Build\Win64\UE4Editor\Inc\Stealth\Agent_Controller.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/Blackboard/BlackboardKeyType_Vector.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardKeyType_Vector.generated.h
+C:\Users\Davie\Documents\Tools_and_Middleware_CW2\CW2\Stealth\Source\Stealth\BB_Keys_Agent.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\iostream
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\istream
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\ostream
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\ios
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\xlocnum
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\climits
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\cmath
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\cstdio
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\iterator
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\iosfwd
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\cstring
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\cwchar
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\xutility
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\utility
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\streambuf
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\xiosbase
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\share.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\system_error
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\__msvc_system_error_abi.hpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\cerrno
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\stdexcept
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\xstring
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\xmemory
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\cstdint
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\limits
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\cfloat
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\isa_availability.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\xcall_once.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\xerrc.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\xlocale
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\memory
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\xfacet
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\xlocinfo
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE\xlocinfo.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\locale.h

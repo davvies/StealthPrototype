@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Stealth",
+			"Path": "C:\\Users\\Davie\\Documents\\Tools_and_Middleware_CW2\\CW2\\Stealth\\Source\\Stealth.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "StealthEditor",
+			"Path": "C:\\Users\\Davie\\Documents\\Tools_and_Middleware_CW2\\CW2\\Stealth\\Source\\StealthEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
