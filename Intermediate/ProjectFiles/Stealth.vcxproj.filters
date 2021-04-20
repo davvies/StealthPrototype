@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Stealth.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{97FDB042-6740-4701-B8AB-80C372140072}</UniqueIdentifier>
+      <UniqueIdentifier>{76F70E32-D005-4299-B3B5-B7E4FE84E48D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Stealth.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\StealthEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{8776BADD-557D-4B59-9B01-5A17AD3A8161}</UniqueIdentifier>
+      <UniqueIdentifier>{0EB3FC67-CD6E-450E-BA6A-46AE60FB8D47}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Stealth">
-      <UniqueIdentifier>{FAE5F538-27DD-4F51-BDC9-8F3B0E57E1D6}</UniqueIdentifier>
+      <UniqueIdentifier>{20ED8947-5497-4E13-9201-CE202BF871D0}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Stealth\Agent.cpp">
       <Filter>Source\Stealth</Filter>
@@ -53,6 +55,12 @@
     <ClInclude Include="..\..\Source\Stealth\BTTObtainLocalPos.h">
       <Filter>Source\Stealth</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Stealth\BTT_GetPlayerLocation.cpp">
+      <Filter>Source\Stealth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Stealth\BTT_GetPlayerLocation.h">
+      <Filter>Source\Stealth</Filter>
+    </ClInclude>
     <None Include="..\..\Source\Stealth\Stealth.Build.cs">
       <Filter>Source\Stealth</Filter>
     </None>
@@ -72,6 +80,12 @@
       <Filter>Source\Stealth</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Stealth\StealthGameMode.h">
+      <Filter>Source\Stealth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Stealth\test.cpp">
+      <Filter>Source\Stealth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Stealth\test.h">
       <Filter>Source\Stealth</Filter>
     </ClInclude>
   </ItemGroup>

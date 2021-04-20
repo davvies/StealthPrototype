@@ -6,6 +6,13 @@
 #include "GameFramework/Character.h"
 #include "StealthCharacter.generated.h"
 
+UENUM(BlueprintType, Category = "")
+enum class SneakState : uint8
+{
+	Visble UMETA(DisplayName = "Visible"),
+	Hiding UMETA(DisplayName = "Hiding"),
+};
+
 UCLASS(config=Game)
 class AStealthCharacter : public ACharacter
 {
@@ -18,6 +25,7 @@ class AStealthCharacter : public ACharacter
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
+
 public:
 	AStealthCharacter();
 
@@ -33,6 +41,20 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	SneakState SneakingState = SneakState::Visble;
+	
+	bool IsHiding();
+
+	bool HasBeenCaught();
+
+private:
+	class UAIPerceptionStimuliSourceComponent* local_stimulus;
+
+	void OnBeginStimulusSetup();
+
+	bool hasBeenCaught;
 
 protected:
 
@@ -68,5 +90,8 @@ protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	// End of APawn interface
 
+	
 };
+
+
 

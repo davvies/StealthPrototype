@@ -23,7 +23,7 @@ EBTNodeResult::Type UBTTObtainLocalPos::ExecuteTask(UBehaviorTreeComponent& owne
 	UNavigationSystemV1* const nav_sys = UNavigationSystemV1::GetCurrent(GetWorld());
 
 	if (nav_sys->GetRandomPointInNavigableRadius(origin, max_agent_radius, loc, nullptr))
-		a_controller->get_bb()->SetValueAsVector(KEY_METADATA::target_location, loc.Location);
+		a_controller->Get_bb()->SetValueAsVector(KEY_METADATA::target_location, loc.Location);
 
 	FinishLatentTask(owner_comp, EBTNodeResult::Succeeded);
 	return EBTNodeResult::Succeeded;

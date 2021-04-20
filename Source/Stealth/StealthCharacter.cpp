@@ -7,6 +7,8 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
+#include "Perception/AIPerceptionStimuliSourceComponent.h"
+#include "Perception/AISense_Sight.h"
 #include "GameFramework/SpringArmComponent.h"
 
 //////////////////////////////////////////////////////////////////////////
@@ -45,6 +47,10 @@ AStealthCharacter::AStealthCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+
+	hasBeenCaught = false; 
+
+	OnBeginStimulusSetup();
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -76,6 +82,23 @@ void AStealthCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerI
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AStealthCharacter::OnResetVR);
 }
 
+
+bool AStealthCharacter::IsHiding()
+{
+	return SneakingState == SneakState::Hiding;
+}
+
+bool AStealthCharacter::HasBeenCaught()
+{
+	return hasBeenCaught;
+}
+
+void AStealthCharacter::OnBeginStimulusSetup()
+{
+	local_stimulus = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("Stimulus"));
+	local_stimulus->RegisterForSense(TSubclassOf < UAISense_Sight>());
+	local_stimulus->RegisterWithPerceptionSystem();
+}
 
 void AStealthCharacter::OnResetVR()
 {

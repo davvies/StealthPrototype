@@ -17,11 +17,71 @@ void EmptyLinkFunctionForGeneratedCodeAgent_Controller() {}
 	STEALTH_API UClass* Z_Construct_UClass_AAgent_Controller();
 	AIMODULE_API UClass* Z_Construct_UClass_AAIController();
 	UPackage* Z_Construct_UPackage__Script_Stealth();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIStimulus();
 	AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTreeComponent_NoRegister();
 	AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTree_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AAgent_Controller::execOn_target_spotted)
+	{
+		P_GET_OBJECT(AActor,Z_Param_actorInstance);
+		P_GET_STRUCT(FAIStimulus,Z_Param_stimulus);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->On_target_spotted(Z_Param_actorInstance,Z_Param_stimulus);
+		P_NATIVE_END;
+	}
 	void AAgent_Controller::StaticRegisterNativesAAgent_Controller()
 	{
+		UClass* Class = AAgent_Controller::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "On_target_spotted", &AAgent_Controller::execOn_target_spotted },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics
+	{
+		struct Agent_Controller_eventOn_target_spotted_Parms
+		{
+			AActor* actorInstance;
+			FAIStimulus stimulus;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_actorInstance;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_stimulus_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_stimulus;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::NewProp_actorInstance = { "actorInstance", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Agent_Controller_eventOn_target_spotted_Parms, actorInstance), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::NewProp_stimulus_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::NewProp_stimulus = { "stimulus", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Agent_Controller_eventOn_target_spotted_Parms, stimulus), Z_Construct_UScriptStruct_FAIStimulus, METADATA_PARAMS(Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::NewProp_stimulus_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::NewProp_stimulus_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::NewProp_actorInstance,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::NewProp_stimulus,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Agent_Controller.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AAgent_Controller, nullptr, "On_target_spotted", nullptr, nullptr, sizeof(Agent_Controller_eventOn_target_spotted_Parms), Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AAgent_Controller_On_target_spotted()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AAgent_Controller_NoRegister()
 	{
@@ -30,6 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeAgent_Controller() {}
 	struct Z_Construct_UClass_AAgent_Controller_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -48,6 +109,9 @@ void EmptyLinkFunctionForGeneratedCodeAgent_Controller() {}
 	UObject* (*const Z_Construct_UClass_AAgent_Controller_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_AAIController,
 		(UObject* (*)())Z_Construct_UPackage__Script_Stealth,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AAgent_Controller_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AAgent_Controller_On_target_spotted, "On_target_spotted" }, // 2651499766
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAgent_Controller_Statics::Class_MetaDataParams[] = {
@@ -87,11 +151,11 @@ void EmptyLinkFunctionForGeneratedCodeAgent_Controller() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_AAgent_Controller_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AAgent_Controller_Statics::PropPointers),
 		0,
 		0x009002A4u,
@@ -106,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeAgent_Controller() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAgent_Controller, 1171817286);
+	IMPLEMENT_CLASS(AAgent_Controller, 3799713077);
 	template<> STEALTH_API UClass* StaticClass<AAgent_Controller>()
 	{
 		return AAgent_Controller::StaticClass();

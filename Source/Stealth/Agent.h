@@ -29,11 +29,11 @@ public:
 private:
 
 	const float min_agentSpeed = 150.0f;
-	const float max_agentSpeed = 600.0f;
+	const float max_agentSpeed = 400.0f;
 
 	//There are issues with pre-processor commands here, not even setting pre-processor expressions can stop magic numbers
-	UPROPERTY(EditAnywhere, Category = "Patrol", meta = (ClampMin = 150.0f, ClampMax = 600.0f,
-		UIMin = 150.0f, UIMax = 600.0f))
+	UPROPERTY(EditAnywhere, Category = "Patrol", meta = (ClampMin = 150.0f, ClampMax = 400.0f,
+		UIMin = 150.0f, UIMax = 400.0f))
 		float max_patrolSpeed;
 
 };

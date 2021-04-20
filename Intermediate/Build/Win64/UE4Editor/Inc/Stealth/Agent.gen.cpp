@@ -53,12 +53,12 @@ void EmptyLinkFunctionForGeneratedCodeAgent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAgent_Statics::NewProp_max_patrolSpeed_MetaData[] = {
 		{ "Category", "Patrol" },
-		{ "ClampMax", "600.000000" },
+		{ "ClampMax", "400.000000" },
 		{ "ClampMin", "150.000000" },
 		{ "Comment", "//There are issues with pre-processor commands here, not even setting pre-processor expressions can stop magic numbers\n" },
 		{ "ModuleRelativePath", "Agent.h" },
 		{ "ToolTip", "There are issues with pre-processor commands here, not even setting pre-processor expressions can stop magic numbers" },
-		{ "UIMax", "600.000000" },
+		{ "UIMax", "400.000000" },
 		{ "UIMin", "150.000000" },
 	};
 #endif
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeAgent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAgent, 2433507278);
+	IMPLEMENT_CLASS(AAgent, 2154443190);
 	template<> STEALTH_API UClass* StaticClass<AAgent>()
 	{
 		return AAgent::StaticClass();

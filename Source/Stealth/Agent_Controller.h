@@ -3,7 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Perception/AIPerceptionTypes.h"
 #include "AIController.h"
+#include "Agent.h"
 #include "Agent_Controller.generated.h"
 
 /**
@@ -19,7 +21,10 @@ public:
 	AAgent_Controller(FObjectInitializer const& object_init = FObjectInitializer::Get());
 	void BeginPlay() override; //
 	void OnPossess(APawn* const pawn) override; //when the agent gets taken over by the controller
-	class UBlackboardComponent* get_bb() const;
+	class UBlackboardComponent* Get_bb() const;
+
+	UFUNCTION()
+	void On_target_spotted(AActor* actorInstance, FAIStimulus const stimulus);
 
 private:
 
@@ -30,5 +35,7 @@ private:
 	class UBehaviorTree* p_behaviour_tree;
 
 	class UBlackboardComponent* p_blackboard; 
+
+	class UAISenseConfig_Sight* sight_sense_config;
 
 };

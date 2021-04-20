@@ -8,15 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+struct FAIStimulus;
 #ifdef STEALTH_Agent_Controller_generated_h
 #error "Agent_Controller.generated.h already included, missing '#pragma once' in Agent_Controller.h"
 #endif
 #define STEALTH_Agent_Controller_generated_h
 
-#define Stealth_Source_Stealth_Agent_Controller_h_15_SPARSE_DATA
-#define Stealth_Source_Stealth_Agent_Controller_h_15_RPC_WRAPPERS
-#define Stealth_Source_Stealth_Agent_Controller_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define Stealth_Source_Stealth_Agent_Controller_h_15_INCLASS_NO_PURE_DECLS \
+#define Stealth_Source_Stealth_Agent_Controller_h_17_SPARSE_DATA
+#define Stealth_Source_Stealth_Agent_Controller_h_17_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOn_target_spotted);
+
+
+#define Stealth_Source_Stealth_Agent_Controller_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOn_target_spotted);
+
+
+#define Stealth_Source_Stealth_Agent_Controller_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAAgent_Controller(); \
 	friend struct Z_Construct_UClass_AAgent_Controller_Statics; \
@@ -25,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(AAgent_Controller)
 
 
-#define Stealth_Source_Stealth_Agent_Controller_h_15_INCLASS \
+#define Stealth_Source_Stealth_Agent_Controller_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesAAgent_Controller(); \
 	friend struct Z_Construct_UClass_AAgent_Controller_Statics; \
@@ -34,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(AAgent_Controller)
 
 
-#define Stealth_Source_Stealth_Agent_Controller_h_15_STANDARD_CONSTRUCTORS \
+#define Stealth_Source_Stealth_Agent_Controller_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AAgent_Controller(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AAgent_Controller) \
@@ -47,7 +57,7 @@ private: \
 public:
 
 
-#define Stealth_Source_Stealth_Agent_Controller_h_15_ENHANCED_CONSTRUCTORS \
+#define Stealth_Source_Stealth_Agent_Controller_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AAgent_Controller(AAgent_Controller&&); \
@@ -58,32 +68,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAgent_Controller); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AAgent_Controller)
 
 
-#define Stealth_Source_Stealth_Agent_Controller_h_15_PRIVATE_PROPERTY_OFFSET \
+#define Stealth_Source_Stealth_Agent_Controller_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__p_behaviour_tree_component() { return STRUCT_OFFSET(AAgent_Controller, p_behaviour_tree_component); } \
 	FORCEINLINE static uint32 __PPO__p_behaviour_tree() { return STRUCT_OFFSET(AAgent_Controller, p_behaviour_tree); }
 
 
-#define Stealth_Source_Stealth_Agent_Controller_h_12_PROLOG
-#define Stealth_Source_Stealth_Agent_Controller_h_15_GENERATED_BODY_LEGACY \
+#define Stealth_Source_Stealth_Agent_Controller_h_14_PROLOG
+#define Stealth_Source_Stealth_Agent_Controller_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Stealth_Source_Stealth_Agent_Controller_h_15_PRIVATE_PROPERTY_OFFSET \
-	Stealth_Source_Stealth_Agent_Controller_h_15_SPARSE_DATA \
-	Stealth_Source_Stealth_Agent_Controller_h_15_RPC_WRAPPERS \
-	Stealth_Source_Stealth_Agent_Controller_h_15_INCLASS \
-	Stealth_Source_Stealth_Agent_Controller_h_15_STANDARD_CONSTRUCTORS \
+	Stealth_Source_Stealth_Agent_Controller_h_17_PRIVATE_PROPERTY_OFFSET \
+	Stealth_Source_Stealth_Agent_Controller_h_17_SPARSE_DATA \
+	Stealth_Source_Stealth_Agent_Controller_h_17_RPC_WRAPPERS \
+	Stealth_Source_Stealth_Agent_Controller_h_17_INCLASS \
+	Stealth_Source_Stealth_Agent_Controller_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Stealth_Source_Stealth_Agent_Controller_h_15_GENERATED_BODY \
+#define Stealth_Source_Stealth_Agent_Controller_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Stealth_Source_Stealth_Agent_Controller_h_15_PRIVATE_PROPERTY_OFFSET \
-	Stealth_Source_Stealth_Agent_Controller_h_15_SPARSE_DATA \
-	Stealth_Source_Stealth_Agent_Controller_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	Stealth_Source_Stealth_Agent_Controller_h_15_INCLASS_NO_PURE_DECLS \
-	Stealth_Source_Stealth_Agent_Controller_h_15_ENHANCED_CONSTRUCTORS \
+	Stealth_Source_Stealth_Agent_Controller_h_17_PRIVATE_PROPERTY_OFFSET \
+	Stealth_Source_Stealth_Agent_Controller_h_17_SPARSE_DATA \
+	Stealth_Source_Stealth_Agent_Controller_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	Stealth_Source_Stealth_Agent_Controller_h_17_INCLASS_NO_PURE_DECLS \
+	Stealth_Source_Stealth_Agent_Controller_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
