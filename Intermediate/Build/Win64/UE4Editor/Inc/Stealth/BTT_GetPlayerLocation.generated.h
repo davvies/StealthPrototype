@@ -59,7 +59,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBTT_GetPlayerLocation); \
 
 
 #define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__search_radius() { return STRUCT_OFFSET(UBTT_GetPlayerLocation, search_radius); }
+	FORCEINLINE static uint32 __PPO__search_radius() { return STRUCT_OFFSET(UBTT_GetPlayerLocation, search_radius); } \
+	FORCEINLINE static uint32 __PPO__base_player_speed_increase() { return STRUCT_OFFSET(UBTT_GetPlayerLocation, base_player_speed_increase); }
 
 
 #define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_13_PROLOG

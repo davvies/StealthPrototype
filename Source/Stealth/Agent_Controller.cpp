@@ -26,7 +26,7 @@ AAgent_Controller::AAgent_Controller(FObjectInitializer const& object_init) {
     sight_sense_config->LoseSightRadius = sight_sense_config->SightRadius + 50.0f; 
     sight_sense_config->PeripheralVisionAngleDegrees = 90.0f; //FOV
     sight_sense_config->SetMaxAge(5.0f);
-    sight_sense_config->AutoSuccessRangeFromLastSeenLocation = 900.0f;
+    sight_sense_config->AutoSuccessRangeFromLastSeenLocation = 300.0f;
     sight_sense_config->DetectionByAffiliation.bDetectEnemies = true;
     sight_sense_config->DetectionByAffiliation.bDetectFriendlies = true; 
     sight_sense_config->DetectionByAffiliation.bDetectNeutrals = true;

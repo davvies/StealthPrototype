@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeStealthCharacter() {}
 		return SneakState_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_SneakState(SneakState_StaticEnum, TEXT("/Script/Stealth"), TEXT("SneakState"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_Stealth_SneakState_Hash() { return 2899726034U; }
+	uint32 Get_Z_Construct_UEnum_Stealth_SneakState_Hash() { return 1682957115U; }
 	UEnum* Z_Construct_UEnum_Stealth_SneakState()
 	{
 #if WITH_HOT_RELOAD
@@ -53,6 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeStealthCharacter() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
+				{ "Category", "" },
 				{ "Hiding.DisplayName", "Hiding" },
 				{ "Hiding.Name", "SneakState::Hiding" },
 				{ "ModuleRelativePath", "StealthCharacter.h" },

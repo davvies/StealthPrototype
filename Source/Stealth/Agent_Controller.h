@@ -23,6 +23,7 @@ public:
 	void OnPossess(APawn* const pawn) override; //when the agent gets taken over by the controller
 	class UBlackboardComponent* Get_bb() const;
 
+
 	UFUNCTION()
 	void On_target_spotted(AActor* actorInstance, FAIStimulus const stimulus);
 

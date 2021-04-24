@@ -12,6 +12,7 @@
 UBTT_GetPlayerLocation::UBTT_GetPlayerLocation(FObjectInitializer const& object_init) {
 
 	NodeName = TEXT("Can see player");
+
 }
 
 EBTNodeResult::Type UBTT_GetPlayerLocation::ExecuteTask(UBehaviorTreeComponent& owner_comp, uint8* node_memory)
@@ -19,17 +20,18 @@ EBTNodeResult::Type UBTT_GetPlayerLocation::ExecuteTask(UBehaviorTreeComponent& 
 	ACharacter* const REFPlayer = UGameplayStatics::GetPlayerCharacter(GetWorld(),0);
 	auto* const player = Cast<AStealthCharacter>(REFPlayer);
 	auto const agent = Cast<AAgent_Controller>(owner_comp.GetAIOwner());
-	
+	AAgent* agentMotion = Cast <AAgent>(agent->GetCharacter());
+
 	if (player->IsHiding()) {
 
 		agent->Get_bb()->SetValueAsBool(KEY_METADATA::player_visible, false);
-		
+
 		return EBTNodeResult::Failed;
 	}
 	
-	FVector playersLocation = player->GetActorLocation();
-	
-	agent->Get_bb()->SetValueAsVector(KEY_METADATA::target_location, playersLocation);
+	agentMotion->SetSelfSpeed(base_player_speed_increase);
+
+	agent->Get_bb()->SetValueAsObject(KEY_METADATA::pawn_target, player);
 
 	FinishLatentTask(owner_comp, EBTNodeResult::Succeeded);
 

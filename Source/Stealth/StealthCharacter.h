@@ -49,6 +49,8 @@ public:
 
 	bool HasBeenCaught();
 
+	float GetCharacterMovementSpeed();
+
 private:
 	class UAIPerceptionStimuliSourceComponent* local_stimulus;
 

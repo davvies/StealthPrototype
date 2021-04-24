@@ -23,4 +23,7 @@ public:
 protected: 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Perception", meta = (AllowProtectedAccess = "true"))
 	float search_radius = 500.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Agent Motion", meta = (AllowProtectedAccess = "true"))
+	float base_player_speed_increase = 50.0f; //we run faster than player, this motion is the delta increase
 };

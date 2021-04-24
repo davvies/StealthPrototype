@@ -14,6 +14,7 @@ class STEALTH_API AAgent : public ACharacter
 public:
 	// Sets default values for this character's properties
 	AAgent();
+	void SetSelfSpeed(const float speed);
 
 protected:
 	// Called when the game starts or when spawned

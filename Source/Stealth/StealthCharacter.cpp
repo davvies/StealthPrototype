@@ -93,6 +93,11 @@ bool AStealthCharacter::HasBeenCaught()
 	return hasBeenCaught;
 }
 
+float AStealthCharacter::GetCharacterMovementSpeed()
+{
+	return GetCharacterMovement()->GetMaxSpeed();
+}
+
 void AStealthCharacter::OnBeginStimulusSetup()
 {
 	local_stimulus = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("Stimulus"));

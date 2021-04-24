@@ -35,6 +35,10 @@ void EmptyLinkFunctionForGeneratedCodeBTT_GetPlayerLocation() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_search_radius_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_search_radius;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_base_player_speed_increase_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_base_player_speed_increase;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -61,8 +65,17 @@ void EmptyLinkFunctionForGeneratedCodeBTT_GetPlayerLocation() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBTT_GetPlayerLocation_Statics::NewProp_search_radius = { "search_radius", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UBTT_GetPlayerLocation, search_radius), METADATA_PARAMS(Z_Construct_UClass_UBTT_GetPlayerLocation_Statics::NewProp_search_radius_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBTT_GetPlayerLocation_Statics::NewProp_search_radius_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBTT_GetPlayerLocation_Statics::NewProp_base_player_speed_increase_MetaData[] = {
+		{ "AllowProtectedAccess", "true" },
+		{ "Category", "Agent Motion" },
+		{ "ModuleRelativePath", "BTT_GetPlayerLocation.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBTT_GetPlayerLocation_Statics::NewProp_base_player_speed_increase = { "base_player_speed_increase", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UBTT_GetPlayerLocation, base_player_speed_increase), METADATA_PARAMS(Z_Construct_UClass_UBTT_GetPlayerLocation_Statics::NewProp_base_player_speed_increase_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBTT_GetPlayerLocation_Statics::NewProp_base_player_speed_increase_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBTT_GetPlayerLocation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTT_GetPlayerLocation_Statics::NewProp_search_radius,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTT_GetPlayerLocation_Statics::NewProp_base_player_speed_increase,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UBTT_GetPlayerLocation_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UBTT_GetPlayerLocation>::IsAbstract,
@@ -91,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeBTT_GetPlayerLocation() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UBTT_GetPlayerLocation, 3436527892);
+	IMPLEMENT_CLASS(UBTT_GetPlayerLocation, 1903370234);
 	template<> STEALTH_API UClass* StaticClass<UBTT_GetPlayerLocation>()
 	{
 		return UBTT_GetPlayerLocation::StaticClass();
