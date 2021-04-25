@@ -29,9 +29,12 @@ EBTNodeResult::Type UBTT_GetPlayerLocation::ExecuteTask(UBehaviorTreeComponent& 
 		return EBTNodeResult::Failed;
 	}
 	
-	agentMotion->SetSelfSpeed(base_player_speed_increase);
+	agentMotion->IncreaseSelfSpeed(base_player_speed_increase);
+
+	agentMotion->isChasingPlayer = true;
 
 	agent->Get_bb()->SetValueAsObject(KEY_METADATA::pawn_target, player);
+	agent->Get_bb()->SetValueAsVector(KEY_METADATA::target_location, player->GetActorLocation());
 
 	FinishLatentTask(owner_comp, EBTNodeResult::Succeeded);
 

@@ -7,6 +7,7 @@
 #include "StealthCharacter.h"
 #include "Math/UnrealMathUtility.h"
 #include <Runtime/Engine/Classes/Kismet/GameplayStatics.h>
+#include <Engine.h>
 
 // Sets default values
 AAgent::AAgent()
@@ -15,22 +16,33 @@ AAgent::AAgent()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
-void AAgent::SetSelfSpeed(const float speed)
+void AAgent::IncreaseSelfSpeed(const float speed)
 {
 	AActor* mainCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(),0);
 	AStealthCharacter* mainChar = Cast<AStealthCharacter>(mainCharacter);
 	GetCharacterMovement()->MaxWalkSpeed = mainChar->GetCharacterMovement()->GetMaxSpeed() + speed;
 }
 
-// Called when the game starts or when spawned
+void AAgent::CorrectSelfSpeed()
+{
+	GetCharacterMovement()->MaxWalkSpeed = GetRandomNormalisedSpeed();
+}
+
+float AAgent::GetRandomNormalisedSpeed()
+{
+	FRandomStream Stream(FMath::Rand());
+	max_patrolSpeed = Stream.FRandRange(min_agentSpeed, max_agentSpeed);
+	return max_patrolSpeed;
+}
+
 void AAgent::BeginPlay()
 {
 	Super::BeginPlay();
 
-	FRandomStream Stream(FMath::Rand());
-	max_patrolSpeed = Stream.FRandRange(min_agentSpeed, max_agentSpeed);
+	GetCharacterMovement()->MaxWalkSpeed = GetRandomNormalisedSpeed();
 
-	GetCharacterMovement()->MaxWalkSpeed = max_patrolSpeed;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(),ADecalActor::StaticClass(), cachedEvidenceLocations);
+	UE_LOG(LogTemp, Warning, TEXT("%d"), cachedEvidenceLocations.Num());
 }
 
 // Called every frame

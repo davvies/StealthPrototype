@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
 #include "GameFramework/Character.h"
 #include "StealthCharacter.generated.h"
 
@@ -47,16 +48,23 @@ public:
 	
 	bool IsHiding();
 
-	bool HasBeenCaught();
+	bool isBeingChased = false;
 
 	float GetCharacterMovementSpeed();
+
+	UFUNCTION(BlueprintCallable)
+	void UpdateHUDTextState();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString s_ActiveState = "Hidden";
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool hasBeenCaught;
 
 private:
 	class UAIPerceptionStimuliSourceComponent* local_stimulus;
 
 	void OnBeginStimulusSetup();
-
-	bool hasBeenCaught;
 
 protected:
 

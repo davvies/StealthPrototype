@@ -9,6 +9,7 @@ public class Stealth : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "AIModule","GameplayTasks",
-			"CoreUObject", "Engine", "NavigationSystem", "InputCore", "HeadMountedDisplay" });
+			"CoreUObject", "Engine", "NavigationSystem", "InputCore", "HeadMountedDisplay"});
+
 	}
 }

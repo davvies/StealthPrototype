@@ -51,6 +51,8 @@ AStealthCharacter::AStealthCharacter()
 	hasBeenCaught = false; 
 
 	OnBeginStimulusSetup();
+	UpdateHUDTextState();
+
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -88,14 +90,24 @@ bool AStealthCharacter::IsHiding()
 	return SneakingState == SneakState::Hiding;
 }
 
-bool AStealthCharacter::HasBeenCaught()
-{
-	return hasBeenCaught;
-}
-
 float AStealthCharacter::GetCharacterMovementSpeed()
 {
 	return GetCharacterMovement()->GetMaxSpeed();
+}
+
+void AStealthCharacter::UpdateHUDTextState()
+{
+	switch (SneakingState) {
+
+	case SneakState::Visble:
+		s_ActiveState = "Visible";
+		break;
+
+	case SneakState::Hiding:
+		s_ActiveState = "Hidden";
+		break;
+	}
+
 }
 
 void AStealthCharacter::OnBeginStimulusSetup()

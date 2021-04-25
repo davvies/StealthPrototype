@@ -13,10 +13,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define STEALTH_StealthCharacter_generated_h
 
-#define Stealth_Source_Stealth_StealthCharacter_h_19_SPARSE_DATA
-#define Stealth_Source_Stealth_StealthCharacter_h_19_RPC_WRAPPERS
-#define Stealth_Source_Stealth_StealthCharacter_h_19_RPC_WRAPPERS_NO_PURE_DECLS
-#define Stealth_Source_Stealth_StealthCharacter_h_19_INCLASS_NO_PURE_DECLS \
+#define Stealth_Source_Stealth_StealthCharacter_h_20_SPARSE_DATA
+#define Stealth_Source_Stealth_StealthCharacter_h_20_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execUpdateHUDTextState);
+
+
+#define Stealth_Source_Stealth_StealthCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execUpdateHUDTextState);
+
+
+#define Stealth_Source_Stealth_StealthCharacter_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAStealthCharacter(); \
 	friend struct Z_Construct_UClass_AStealthCharacter_Statics; \
@@ -25,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(AStealthCharacter)
 
 
-#define Stealth_Source_Stealth_StealthCharacter_h_19_INCLASS \
+#define Stealth_Source_Stealth_StealthCharacter_h_20_INCLASS \
 private: \
 	static void StaticRegisterNativesAStealthCharacter(); \
 	friend struct Z_Construct_UClass_AStealthCharacter_Statics; \
@@ -34,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(AStealthCharacter)
 
 
-#define Stealth_Source_Stealth_StealthCharacter_h_19_STANDARD_CONSTRUCTORS \
+#define Stealth_Source_Stealth_StealthCharacter_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AStealthCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AStealthCharacter) \
@@ -47,7 +55,7 @@ private: \
 public:
 
 
-#define Stealth_Source_Stealth_StealthCharacter_h_19_ENHANCED_CONSTRUCTORS \
+#define Stealth_Source_Stealth_StealthCharacter_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AStealthCharacter(AStealthCharacter&&); \
@@ -58,32 +66,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AStealthCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AStealthCharacter)
 
 
-#define Stealth_Source_Stealth_StealthCharacter_h_19_PRIVATE_PROPERTY_OFFSET \
+#define Stealth_Source_Stealth_StealthCharacter_h_20_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(AStealthCharacter, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AStealthCharacter, FollowCamera); }
 
 
-#define Stealth_Source_Stealth_StealthCharacter_h_16_PROLOG
-#define Stealth_Source_Stealth_StealthCharacter_h_19_GENERATED_BODY_LEGACY \
+#define Stealth_Source_Stealth_StealthCharacter_h_17_PROLOG
+#define Stealth_Source_Stealth_StealthCharacter_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Stealth_Source_Stealth_StealthCharacter_h_19_PRIVATE_PROPERTY_OFFSET \
-	Stealth_Source_Stealth_StealthCharacter_h_19_SPARSE_DATA \
-	Stealth_Source_Stealth_StealthCharacter_h_19_RPC_WRAPPERS \
-	Stealth_Source_Stealth_StealthCharacter_h_19_INCLASS \
-	Stealth_Source_Stealth_StealthCharacter_h_19_STANDARD_CONSTRUCTORS \
+	Stealth_Source_Stealth_StealthCharacter_h_20_PRIVATE_PROPERTY_OFFSET \
+	Stealth_Source_Stealth_StealthCharacter_h_20_SPARSE_DATA \
+	Stealth_Source_Stealth_StealthCharacter_h_20_RPC_WRAPPERS \
+	Stealth_Source_Stealth_StealthCharacter_h_20_INCLASS \
+	Stealth_Source_Stealth_StealthCharacter_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Stealth_Source_Stealth_StealthCharacter_h_19_GENERATED_BODY \
+#define Stealth_Source_Stealth_StealthCharacter_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Stealth_Source_Stealth_StealthCharacter_h_19_PRIVATE_PROPERTY_OFFSET \
-	Stealth_Source_Stealth_StealthCharacter_h_19_SPARSE_DATA \
-	Stealth_Source_Stealth_StealthCharacter_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	Stealth_Source_Stealth_StealthCharacter_h_19_INCLASS_NO_PURE_DECLS \
-	Stealth_Source_Stealth_StealthCharacter_h_19_ENHANCED_CONSTRUCTORS \
+	Stealth_Source_Stealth_StealthCharacter_h_20_PRIVATE_PROPERTY_OFFSET \
+	Stealth_Source_Stealth_StealthCharacter_h_20_SPARSE_DATA \
+	Stealth_Source_Stealth_StealthCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	Stealth_Source_Stealth_StealthCharacter_h_20_INCLASS_NO_PURE_DECLS \
+	Stealth_Source_Stealth_StealthCharacter_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

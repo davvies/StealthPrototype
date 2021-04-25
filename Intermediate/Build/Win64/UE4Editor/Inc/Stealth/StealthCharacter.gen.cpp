@@ -78,8 +78,42 @@ void EmptyLinkFunctionForGeneratedCodeStealthCharacter() {}
 		}
 		return ReturnEnum;
 	}
+	DEFINE_FUNCTION(AStealthCharacter::execUpdateHUDTextState)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->UpdateHUDTextState();
+		P_NATIVE_END;
+	}
 	void AStealthCharacter::StaticRegisterNativesAStealthCharacter()
 	{
+		UClass* Class = AStealthCharacter::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "UpdateHUDTextState", &AStealthCharacter::execUpdateHUDTextState },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AStealthCharacter_UpdateHUDTextState_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AStealthCharacter_UpdateHUDTextState_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "StealthCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AStealthCharacter_UpdateHUDTextState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AStealthCharacter, nullptr, "UpdateHUDTextState", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AStealthCharacter_UpdateHUDTextState_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AStealthCharacter_UpdateHUDTextState_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AStealthCharacter_UpdateHUDTextState()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AStealthCharacter_UpdateHUDTextState_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AStealthCharacter_NoRegister()
 	{
@@ -88,6 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeStealthCharacter() {}
 	struct Z_Construct_UClass_AStealthCharacter_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -112,6 +147,15 @@ void EmptyLinkFunctionForGeneratedCodeStealthCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SneakingState_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_SneakingState;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_s_ActiveState_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_s_ActiveState;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_hasBeenCaught_MetaData[];
+#endif
+		static void NewProp_hasBeenCaught_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_hasBeenCaught;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -119,6 +163,9 @@ void EmptyLinkFunctionForGeneratedCodeStealthCharacter() {}
 	UObject* (*const Z_Construct_UClass_AStealthCharacter_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_Stealth,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AStealthCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AStealthCharacter_UpdateHUDTextState, "UpdateHUDTextState" }, // 1578582799
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AStealthCharacter_Statics::Class_MetaDataParams[] = {
@@ -175,6 +222,24 @@ void EmptyLinkFunctionForGeneratedCodeStealthCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AStealthCharacter_Statics::NewProp_SneakingState = { "SneakingState", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AStealthCharacter, SneakingState), Z_Construct_UEnum_Stealth_SneakState, METADATA_PARAMS(Z_Construct_UClass_AStealthCharacter_Statics::NewProp_SneakingState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AStealthCharacter_Statics::NewProp_SneakingState_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AStealthCharacter_Statics::NewProp_s_ActiveState_MetaData[] = {
+		{ "Category", "StealthCharacter" },
+		{ "ModuleRelativePath", "StealthCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AStealthCharacter_Statics::NewProp_s_ActiveState = { "s_ActiveState", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AStealthCharacter, s_ActiveState), METADATA_PARAMS(Z_Construct_UClass_AStealthCharacter_Statics::NewProp_s_ActiveState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AStealthCharacter_Statics::NewProp_s_ActiveState_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AStealthCharacter_Statics::NewProp_hasBeenCaught_MetaData[] = {
+		{ "Category", "StealthCharacter" },
+		{ "ModuleRelativePath", "StealthCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_AStealthCharacter_Statics::NewProp_hasBeenCaught_SetBit(void* Obj)
+	{
+		((AStealthCharacter*)Obj)->hasBeenCaught = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AStealthCharacter_Statics::NewProp_hasBeenCaught = { "hasBeenCaught", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AStealthCharacter), &Z_Construct_UClass_AStealthCharacter_Statics::NewProp_hasBeenCaught_SetBit, METADATA_PARAMS(Z_Construct_UClass_AStealthCharacter_Statics::NewProp_hasBeenCaught_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AStealthCharacter_Statics::NewProp_hasBeenCaught_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AStealthCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStealthCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStealthCharacter_Statics::NewProp_FollowCamera,
@@ -182,6 +247,8 @@ void EmptyLinkFunctionForGeneratedCodeStealthCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStealthCharacter_Statics::NewProp_BaseLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStealthCharacter_Statics::NewProp_SneakingState_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStealthCharacter_Statics::NewProp_SneakingState,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStealthCharacter_Statics::NewProp_s_ActiveState,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStealthCharacter_Statics::NewProp_hasBeenCaught,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AStealthCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AStealthCharacter>::IsAbstract,
@@ -191,11 +258,11 @@ void EmptyLinkFunctionForGeneratedCodeStealthCharacter() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_AStealthCharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AStealthCharacter_Statics::PropPointers),
 		0,
 		0x008000A4u,
@@ -210,7 +277,7 @@ void EmptyLinkFunctionForGeneratedCodeStealthCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AStealthCharacter, 4095419156);
+	IMPLEMENT_CLASS(AStealthCharacter, 4240918258);
 	template<> STEALTH_API UClass* StaticClass<AStealthCharacter>()
 	{
 		return AStealthCharacter::StaticClass();

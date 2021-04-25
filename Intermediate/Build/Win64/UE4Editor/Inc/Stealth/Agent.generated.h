@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define STEALTH_Agent_generated_h
 
-#define Stealth_Source_Stealth_Agent_h_12_SPARSE_DATA
-#define Stealth_Source_Stealth_Agent_h_12_RPC_WRAPPERS
-#define Stealth_Source_Stealth_Agent_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define Stealth_Source_Stealth_Agent_h_12_INCLASS_NO_PURE_DECLS \
+#define Stealth_Source_Stealth_Agent_h_20_SPARSE_DATA
+#define Stealth_Source_Stealth_Agent_h_20_RPC_WRAPPERS
+#define Stealth_Source_Stealth_Agent_h_20_RPC_WRAPPERS_NO_PURE_DECLS
+#define Stealth_Source_Stealth_Agent_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAAgent(); \
 	friend struct Z_Construct_UClass_AAgent_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AAgent)
 
 
-#define Stealth_Source_Stealth_Agent_h_12_INCLASS \
+#define Stealth_Source_Stealth_Agent_h_20_INCLASS \
 private: \
 	static void StaticRegisterNativesAAgent(); \
 	friend struct Z_Construct_UClass_AAgent_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AAgent)
 
 
-#define Stealth_Source_Stealth_Agent_h_12_STANDARD_CONSTRUCTORS \
+#define Stealth_Source_Stealth_Agent_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AAgent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AAgent) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Stealth_Source_Stealth_Agent_h_12_ENHANCED_CONSTRUCTORS \
+#define Stealth_Source_Stealth_Agent_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AAgent(AAgent&&); \
@@ -58,31 +58,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAgent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AAgent)
 
 
-#define Stealth_Source_Stealth_Agent_h_12_PRIVATE_PROPERTY_OFFSET \
+#define Stealth_Source_Stealth_Agent_h_20_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__max_patrolSpeed() { return STRUCT_OFFSET(AAgent, max_patrolSpeed); }
 
 
-#define Stealth_Source_Stealth_Agent_h_9_PROLOG
-#define Stealth_Source_Stealth_Agent_h_12_GENERATED_BODY_LEGACY \
+#define Stealth_Source_Stealth_Agent_h_17_PROLOG
+#define Stealth_Source_Stealth_Agent_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Stealth_Source_Stealth_Agent_h_12_PRIVATE_PROPERTY_OFFSET \
-	Stealth_Source_Stealth_Agent_h_12_SPARSE_DATA \
-	Stealth_Source_Stealth_Agent_h_12_RPC_WRAPPERS \
-	Stealth_Source_Stealth_Agent_h_12_INCLASS \
-	Stealth_Source_Stealth_Agent_h_12_STANDARD_CONSTRUCTORS \
+	Stealth_Source_Stealth_Agent_h_20_PRIVATE_PROPERTY_OFFSET \
+	Stealth_Source_Stealth_Agent_h_20_SPARSE_DATA \
+	Stealth_Source_Stealth_Agent_h_20_RPC_WRAPPERS \
+	Stealth_Source_Stealth_Agent_h_20_INCLASS \
+	Stealth_Source_Stealth_Agent_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Stealth_Source_Stealth_Agent_h_12_GENERATED_BODY \
+#define Stealth_Source_Stealth_Agent_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Stealth_Source_Stealth_Agent_h_12_PRIVATE_PROPERTY_OFFSET \
-	Stealth_Source_Stealth_Agent_h_12_SPARSE_DATA \
-	Stealth_Source_Stealth_Agent_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	Stealth_Source_Stealth_Agent_h_12_INCLASS_NO_PURE_DECLS \
-	Stealth_Source_Stealth_Agent_h_12_ENHANCED_CONSTRUCTORS \
+	Stealth_Source_Stealth_Agent_h_20_PRIVATE_PROPERTY_OFFSET \
+	Stealth_Source_Stealth_Agent_h_20_SPARSE_DATA \
+	Stealth_Source_Stealth_Agent_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	Stealth_Source_Stealth_Agent_h_20_INCLASS_NO_PURE_DECLS \
+	Stealth_Source_Stealth_Agent_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -92,5 +92,13 @@ template<> STEALTH_API UClass* StaticClass<class AAgent>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID Stealth_Source_Stealth_Agent_h
 
+
+#define FOREACH_ENUM_TRAILFOLLOW(op) \
+	op(TrailFollow::Never) \
+	op(TrailFollow::Rarely) \
+	op(TrailFollow::MostTimes) 
+
+enum class TrailFollow : uint8;
+template<> STEALTH_API UEnum* StaticEnum<TrailFollow>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

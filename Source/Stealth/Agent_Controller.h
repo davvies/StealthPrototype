@@ -27,6 +27,9 @@ public:
 	UFUNCTION()
 	void On_target_spotted(AActor* actorInstance, FAIStimulus const stimulus);
 
+	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "AI Agent")
+	bool usePerception = true; 
+
 private:
 
 	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "AI Agent", meta = (AllowPrivateAccess = "true"))
@@ -38,5 +41,7 @@ private:
 	class UBlackboardComponent* p_blackboard; 
 
 	class UAISenseConfig_Sight* sight_sense_config;
+
+	class UAISenseConfig_Hearing* hearing_sense_config;
 
 };
