@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define STEALTH_BTT_GetPlayerLocation_generated_h
 
-#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_SPARSE_DATA
-#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_RPC_WRAPPERS
-#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_RPC_WRAPPERS_NO_PURE_DECLS
-#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_INCLASS_NO_PURE_DECLS \
+#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_SPARSE_DATA
+#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_RPC_WRAPPERS
+#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_RPC_WRAPPERS_NO_PURE_DECLS
+#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUBTT_GetPlayerLocation(); \
 	friend struct Z_Construct_UClass_UBTT_GetPlayerLocation_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(UBTT_GetPlayerLocation)
 
 
-#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_INCLASS \
+#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_INCLASS \
 private: \
 	static void StaticRegisterNativesUBTT_GetPlayerLocation(); \
 	friend struct Z_Construct_UClass_UBTT_GetPlayerLocation_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UBTT_GetPlayerLocation)
 
 
-#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_STANDARD_CONSTRUCTORS \
+#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBTT_GetPlayerLocation(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBTT_GetPlayerLocation) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_ENHANCED_CONSTRUCTORS \
+#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UBTT_GetPlayerLocation(UBTT_GetPlayerLocation&&); \
@@ -58,32 +58,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBTT_GetPlayerLocation); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBTT_GetPlayerLocation)
 
 
-#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_PRIVATE_PROPERTY_OFFSET \
+#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__search_radius() { return STRUCT_OFFSET(UBTT_GetPlayerLocation, search_radius); } \
 	FORCEINLINE static uint32 __PPO__base_player_speed_increase() { return STRUCT_OFFSET(UBTT_GetPlayerLocation, base_player_speed_increase); }
 
 
-#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_13_PROLOG
-#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_GENERATED_BODY_LEGACY \
+#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_8_PROLOG
+#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_PRIVATE_PROPERTY_OFFSET \
-	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_SPARSE_DATA \
-	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_RPC_WRAPPERS \
-	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_INCLASS \
-	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_STANDARD_CONSTRUCTORS \
+	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_PRIVATE_PROPERTY_OFFSET \
+	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_SPARSE_DATA \
+	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_RPC_WRAPPERS \
+	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_INCLASS \
+	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_GENERATED_BODY \
+#define Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_PRIVATE_PROPERTY_OFFSET \
-	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_SPARSE_DATA \
-	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_INCLASS_NO_PURE_DECLS \
-	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_16_ENHANCED_CONSTRUCTORS \
+	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_PRIVATE_PROPERTY_OFFSET \
+	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_SPARSE_DATA \
+	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_INCLASS_NO_PURE_DECLS \
+	Stealth_Source_Stealth_BTT_GetPlayerLocation_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

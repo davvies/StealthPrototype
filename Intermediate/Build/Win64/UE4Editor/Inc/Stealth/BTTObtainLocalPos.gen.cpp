@@ -46,7 +46,6 @@ void EmptyLinkFunctionForGeneratedCodeBTTObtainLocalPos() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBTTObtainLocalPos_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "BTTObtainLocalPos.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "BTTObtainLocalPos.h" },
@@ -91,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeBTTObtainLocalPos() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UBTTObtainLocalPos, 3436724906);
+	IMPLEMENT_CLASS(UBTTObtainLocalPos, 808491173);
 	template<> STEALTH_API UClass* StaticClass<UBTTObtainLocalPos>()
 	{
 		return UBTTObtainLocalPos::StaticClass();

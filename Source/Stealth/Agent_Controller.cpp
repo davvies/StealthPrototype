@@ -21,21 +21,7 @@ AAgent_Controller::AAgent_Controller(FObjectInitializer const& object_init) {
     p_behaviour_tree_component = object_init.CreateDefaultSubobject<UBehaviorTreeComponent>(this, TEXT("c_BehaviourTree"));
     p_blackboard = object_init.CreateDefaultSubobject<UBlackboardComponent>(this, TEXT("c_Blackboard"));
 
-    sight_sense_config = CreateDefaultSubobject<UAISenseConfig_Sight>(TEXT("Agent sight config"));
-    SetPerceptionComponent(*CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("Perception Component")));
-    sight_sense_config->SightRadius = 500.0f;
-    sight_sense_config->LoseSightRadius = sight_sense_config->SightRadius + 50.0f; 
-    sight_sense_config->PeripheralVisionAngleDegrees = 90.0f; //FOV
-    sight_sense_config->SetMaxAge(5.0f);
-    sight_sense_config->AutoSuccessRangeFromLastSeenLocation = 1000.0f;
-    sight_sense_config->DetectionByAffiliation.bDetectEnemies = true;
-    sight_sense_config->DetectionByAffiliation.bDetectFriendlies = true; 
-    sight_sense_config->DetectionByAffiliation.bDetectNeutrals = true;
-
-    GetPerceptionComponent()->SetDominantSense(*sight_sense_config->GetSenseImplementation());
-    GetPerceptionComponent()->OnTargetPerceptionUpdated.AddDynamic(this, &AAgent_Controller::On_target_spotted);
-
-    GetPerceptionComponent()->ConfigureSense(*sight_sense_config);
+    SensoryConfig();
 
    // UE_LOG(LogTemp, Warning, TEXT("%s"), cachedEvidenceLocations.Num());
 }
@@ -73,4 +59,32 @@ void AAgent_Controller::On_target_spotted(AActor* actorInstance, FAIStimulus con
     if(usePerception)
         Get_bb()->SetValueAsBool(KEY_METADATA::player_visible, isInLoS);
            
+}
+
+void AAgent_Controller::SensoryConfig()
+{
+    sight_sense_config = CreateDefaultSubobject<UAISenseConfig_Sight>(TEXT("Agent sight config"));
+    SetPerceptionComponent(*CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("Perception Component")));
+
+    sight_sense_config->SightRadius = sightRadius;
+
+    sight_sense_config->LoseSightRadius = sight_sense_config->SightRadius + loseSightDeltaRadius;
+
+    sight_sense_config->PeripheralVisionAngleDegrees = FOV; //typical frustrum angle
+
+    sight_sense_config->SetMaxAge(maxAge);
+
+    sight_sense_config->AutoSuccessRangeFromLastSeenLocation = persistanceVisionFactor;
+
+    //awareness configs
+    sight_sense_config->DetectionByAffiliation.bDetectEnemies = true;
+    sight_sense_config->DetectionByAffiliation.bDetectFriendlies = true;
+    sight_sense_config->DetectionByAffiliation.bDetectNeutrals = true;
+
+    //given maps set within the night auditory senses can become prominent
+    GetPerceptionComponent()->SetDominantSense(*sight_sense_config->GetSenseImplementation());
+
+    GetPerceptionComponent()->OnTargetPerceptionUpdated.AddDynamic(this, &AAgent_Controller::On_target_spotted);
+
+    GetPerceptionComponent()->ConfigureSense(*sight_sense_config);
 }

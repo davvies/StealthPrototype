@@ -29,7 +29,8 @@ EBTNodeResult::Type UBTT_GetPlayerLocation::ExecuteTask(UBehaviorTreeComponent& 
 		return EBTNodeResult::Failed;
 	}
 	
-	agentMotion->IncreaseSelfSpeed(base_player_speed_increase);
+	//if the player is not hiding one can assume they are in the open
+	agentMotion->IncreaseSelfSpeed(base_player_speed_increase); 
 
 	agentMotion->isChasingPlayer = true;
 

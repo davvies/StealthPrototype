@@ -85,7 +85,7 @@ void AStealthCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerI
 }
 
 
-bool AStealthCharacter::IsHiding()
+bool AStealthCharacter::IsHiding() 
 {
 	return SneakingState == SneakState::Hiding;
 }

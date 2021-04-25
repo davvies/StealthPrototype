@@ -70,7 +70,9 @@ void EmptyLinkFunctionForGeneratedCodeAgent_Controller() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//Used when agent visual stimuli detects player\n" },
 		{ "ModuleRelativePath", "Agent_Controller.h" },
+		{ "ToolTip", "Used when agent visual stimuli detects player" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AAgent_Controller, nullptr, "On_target_spotted", nullptr, nullptr, sizeof(Agent_Controller_eventOn_target_spotted_Parms), Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AAgent_Controller_On_target_spotted_Statics::Function_MetaDataParams)) };
@@ -116,11 +118,10 @@ void EmptyLinkFunctionForGeneratedCodeAgent_Controller() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Stealth,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AAgent_Controller_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AAgent_Controller_On_target_spotted, "On_target_spotted" }, // 2651499766
+		{ &Z_Construct_UFunction_AAgent_Controller_On_target_spotted, "On_target_spotted" }, // 2623832407
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAgent_Controller_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "Agent_Controller.h" },
 		{ "ModuleRelativePath", "Agent_Controller.h" },
@@ -130,7 +131,9 @@ void EmptyLinkFunctionForGeneratedCodeAgent_Controller() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAgent_Controller_Statics::NewProp_usePerception_MetaData[] = {
 		{ "Category", "AI Agent" },
+		{ "Comment", "//Used for debugging purposes\n" },
 		{ "ModuleRelativePath", "Agent_Controller.h" },
+		{ "ToolTip", "Used for debugging purposes" },
 	};
 #endif
 	void Z_Construct_UClass_AAgent_Controller_Statics::NewProp_usePerception_SetBit(void* Obj)
@@ -142,8 +145,10 @@ void EmptyLinkFunctionForGeneratedCodeAgent_Controller() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAgent_Controller_Statics::NewProp_p_behaviour_tree_component_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "AI Agent" },
+		{ "Comment", "//Local behaviour tree component\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Agent_Controller.h" },
+		{ "ToolTip", "Local behaviour tree component" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAgent_Controller_Statics::NewProp_p_behaviour_tree_component = { "p_behaviour_tree_component", nullptr, (EPropertyFlags)0x004000000008080d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAgent_Controller, p_behaviour_tree_component), Z_Construct_UClass_UBehaviorTreeComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AAgent_Controller_Statics::NewProp_p_behaviour_tree_component_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAgent_Controller_Statics::NewProp_p_behaviour_tree_component_MetaData)) };
@@ -151,7 +156,9 @@ void EmptyLinkFunctionForGeneratedCodeAgent_Controller() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAgent_Controller_Statics::NewProp_p_behaviour_tree_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "AI Agent" },
+		{ "Comment", "//Instance of the agents behaviourtree\n" },
 		{ "ModuleRelativePath", "Agent_Controller.h" },
+		{ "ToolTip", "Instance of the agents behaviourtree" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAgent_Controller_Statics::NewProp_p_behaviour_tree = { "p_behaviour_tree", nullptr, (EPropertyFlags)0x0040000000000805, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAgent_Controller, p_behaviour_tree), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AAgent_Controller_Statics::NewProp_p_behaviour_tree_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAgent_Controller_Statics::NewProp_p_behaviour_tree_MetaData)) };
@@ -187,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeAgent_Controller() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAgent_Controller, 1819060193);
+	IMPLEMENT_CLASS(AAgent_Controller, 3002267549);
 	template<> STEALTH_API UClass* StaticClass<AAgent_Controller>()
 	{
 		return AAgent_Controller::StaticClass();

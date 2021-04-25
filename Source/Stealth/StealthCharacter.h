@@ -8,10 +8,10 @@
 #include "StealthCharacter.generated.h"
 
 UENUM(BlueprintType, Category = "")
-enum class SneakState : uint8
+enum class SneakState : uint8 //dependant on the stealth state global agents react differently
 {
-	Visble UMETA(DisplayName = "Visible"),
-	Hiding UMETA(DisplayName = "Hiding"),
+	Visble UMETA(DisplayName = "Visible"), //player is in the open
+	Hiding UMETA(DisplayName = "Hiding"), //player is completely hidden
 };
 
 UCLASS(config=Game)
@@ -43,27 +43,37 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
+	//By default the player is in the open 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	SneakState SneakingState = SneakState::Visble;
 	
+	//Getter for external classes
 	bool IsHiding();
 
+	//HUD data
 	bool isBeingChased = false;
 
+	//Properties of the character are hidden
 	float GetCharacterMovementSpeed();
 
+	//Widget update 
 	UFUNCTION(BlueprintCallable)
 	void UpdateHUDTextState();
 
+	//In-order to display the state on screen a string representation is needed
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FString s_ActiveState = "Hidden";
 	
+	//A trigger used in ending the game
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool hasBeenCaught;
 
 private:
+	 
+	//Local stimulus
 	class UAIPerceptionStimuliSourceComponent* local_stimulus;
 
+	//Configuration for stimulus
 	void OnBeginStimulusSetup();
 
 protected:

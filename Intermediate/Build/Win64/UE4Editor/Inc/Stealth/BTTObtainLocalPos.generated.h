@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define STEALTH_BTTObtainLocalPos_generated_h
 
-#define Stealth_Source_Stealth_BTTObtainLocalPos_h_22_SPARSE_DATA
-#define Stealth_Source_Stealth_BTTObtainLocalPos_h_22_RPC_WRAPPERS
-#define Stealth_Source_Stealth_BTTObtainLocalPos_h_22_RPC_WRAPPERS_NO_PURE_DECLS
-#define Stealth_Source_Stealth_BTTObtainLocalPos_h_22_INCLASS_NO_PURE_DECLS \
+#define Stealth_Source_Stealth_BTTObtainLocalPos_h_17_SPARSE_DATA
+#define Stealth_Source_Stealth_BTTObtainLocalPos_h_17_RPC_WRAPPERS
+#define Stealth_Source_Stealth_BTTObtainLocalPos_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define Stealth_Source_Stealth_BTTObtainLocalPos_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUBTTObtainLocalPos(); \
 	friend struct Z_Construct_UClass_UBTTObtainLocalPos_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(UBTTObtainLocalPos)
 
 
-#define Stealth_Source_Stealth_BTTObtainLocalPos_h_22_INCLASS \
+#define Stealth_Source_Stealth_BTTObtainLocalPos_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesUBTTObtainLocalPos(); \
 	friend struct Z_Construct_UClass_UBTTObtainLocalPos_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UBTTObtainLocalPos)
 
 
-#define Stealth_Source_Stealth_BTTObtainLocalPos_h_22_STANDARD_CONSTRUCTORS \
+#define Stealth_Source_Stealth_BTTObtainLocalPos_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBTTObtainLocalPos(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBTTObtainLocalPos) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Stealth_Source_Stealth_BTTObtainLocalPos_h_22_ENHANCED_CONSTRUCTORS \
+#define Stealth_Source_Stealth_BTTObtainLocalPos_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UBTTObtainLocalPos(UBTTObtainLocalPos&&); \
@@ -58,31 +58,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBTTObtainLocalPos); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBTTObtainLocalPos)
 
 
-#define Stealth_Source_Stealth_BTTObtainLocalPos_h_22_PRIVATE_PROPERTY_OFFSET \
+#define Stealth_Source_Stealth_BTTObtainLocalPos_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__max_agent_radius() { return STRUCT_OFFSET(UBTTObtainLocalPos, max_agent_radius); }
 
 
-#define Stealth_Source_Stealth_BTTObtainLocalPos_h_19_PROLOG
-#define Stealth_Source_Stealth_BTTObtainLocalPos_h_22_GENERATED_BODY_LEGACY \
+#define Stealth_Source_Stealth_BTTObtainLocalPos_h_14_PROLOG
+#define Stealth_Source_Stealth_BTTObtainLocalPos_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Stealth_Source_Stealth_BTTObtainLocalPos_h_22_PRIVATE_PROPERTY_OFFSET \
-	Stealth_Source_Stealth_BTTObtainLocalPos_h_22_SPARSE_DATA \
-	Stealth_Source_Stealth_BTTObtainLocalPos_h_22_RPC_WRAPPERS \
-	Stealth_Source_Stealth_BTTObtainLocalPos_h_22_INCLASS \
-	Stealth_Source_Stealth_BTTObtainLocalPos_h_22_STANDARD_CONSTRUCTORS \
+	Stealth_Source_Stealth_BTTObtainLocalPos_h_17_PRIVATE_PROPERTY_OFFSET \
+	Stealth_Source_Stealth_BTTObtainLocalPos_h_17_SPARSE_DATA \
+	Stealth_Source_Stealth_BTTObtainLocalPos_h_17_RPC_WRAPPERS \
+	Stealth_Source_Stealth_BTTObtainLocalPos_h_17_INCLASS \
+	Stealth_Source_Stealth_BTTObtainLocalPos_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Stealth_Source_Stealth_BTTObtainLocalPos_h_22_GENERATED_BODY \
+#define Stealth_Source_Stealth_BTTObtainLocalPos_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Stealth_Source_Stealth_BTTObtainLocalPos_h_22_PRIVATE_PROPERTY_OFFSET \
-	Stealth_Source_Stealth_BTTObtainLocalPos_h_22_SPARSE_DATA \
-	Stealth_Source_Stealth_BTTObtainLocalPos_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
-	Stealth_Source_Stealth_BTTObtainLocalPos_h_22_INCLASS_NO_PURE_DECLS \
-	Stealth_Source_Stealth_BTTObtainLocalPos_h_22_ENHANCED_CONSTRUCTORS \
+	Stealth_Source_Stealth_BTTObtainLocalPos_h_17_PRIVATE_PROPERTY_OFFSET \
+	Stealth_Source_Stealth_BTTObtainLocalPos_h_17_SPARSE_DATA \
+	Stealth_Source_Stealth_BTTObtainLocalPos_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	Stealth_Source_Stealth_BTTObtainLocalPos_h_17_INCLASS_NO_PURE_DECLS \
+	Stealth_Source_Stealth_BTTObtainLocalPos_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

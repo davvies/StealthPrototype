@@ -33,7 +33,7 @@ void EmptyLinkFunctionForGeneratedCodeAgent() {}
 		return TrailFollow_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_TrailFollow(TrailFollow_StaticEnum, TEXT("/Script/Stealth"), TEXT("TrailFollow"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_Stealth_TrailFollow_Hash() { return 1033699940U; }
+	uint32 Get_Z_Construct_UEnum_Stealth_TrailFollow_Hash() { return 798435174U; }
 	UEnum* Z_Construct_UEnum_Stealth_TrailFollow()
 	{
 #if WITH_HOT_RELOAD
@@ -53,6 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeAgent() {}
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
 				{ "Category", "" },
+				{ "Comment", "/*\n* TrailFollow refers to the frequency at which the agent heads to the site of evidence.\n* Never = No probablity. Rarely = Agent may occasionally head to site of evidence. MostTimes = Frequent visits.\n*/" },
 				{ "ModuleRelativePath", "Agent.h" },
 				{ "MostTimes.DisplayName", "Most times" },
 				{ "MostTimes.Name", "TrailFollow::MostTimes" },
@@ -60,6 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeAgent() {}
 				{ "Never.Name", "TrailFollow::Never" },
 				{ "Rarely.DisplayName", "Rarely" },
 				{ "Rarely.Name", "TrailFollow::Rarely" },
+				{ "ToolTip", "* TrailFollow refers to the frequency at which the agent heads to the site of evidence.\n* Never = No probablity. Rarely = Agent may occasionally head to site of evidence. MostTimes = Frequent visits." },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -124,7 +126,9 @@ void EmptyLinkFunctionForGeneratedCodeAgent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAgent_Statics::NewProp_isChasingPlayer_MetaData[] = {
 		{ "Category", "AI chase" },
+		{ "Comment", "//Used for HUD data\n" },
 		{ "ModuleRelativePath", "Agent.h" },
+		{ "ToolTip", "Used for HUD data" },
 	};
 #endif
 	void Z_Construct_UClass_AAgent_Statics::NewProp_isChasingPlayer_SetBit(void* Obj)
@@ -136,7 +140,9 @@ void EmptyLinkFunctionForGeneratedCodeAgent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAgent_Statics::NewProp_searchBehaviour_MetaData[] = {
 		{ "Category", "AI Search behaviour" },
+		{ "Comment", "//By default agents will search a local area\n" },
 		{ "ModuleRelativePath", "Agent.h" },
+		{ "ToolTip", "By default agents will search a local area" },
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AAgent_Statics::NewProp_searchBehaviour = { "searchBehaviour", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAgent, searchBehaviour), Z_Construct_UEnum_Stealth_TrailFollow, METADATA_PARAMS(Z_Construct_UClass_AAgent_Statics::NewProp_searchBehaviour_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAgent_Statics::NewProp_searchBehaviour_MetaData)) };
@@ -186,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeAgent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAgent, 2960784654);
+	IMPLEMENT_CLASS(AAgent, 2483875983);
 	template<> STEALTH_API UClass* StaticClass<AAgent>()
 	{
 		return AAgent::StaticClass();
