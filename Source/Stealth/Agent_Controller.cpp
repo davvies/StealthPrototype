@@ -1,4 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
 #include "Agent_Controller.h"
 #include "BehaviorTree/BehaviorTreeComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
@@ -65,6 +64,7 @@ void AAgent_Controller::SensoryConfig()
     sight_sense_config = CreateDefaultSubobject<UAISenseConfig_Sight>(TEXT("Agent sight config"));
     SetPerceptionComponent(*CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("Perception Component")));
 
+    //sense param configs
     sight_sense_config->SightRadius = sightRadius;
 
     sight_sense_config->LoseSightRadius = sight_sense_config->SightRadius + loseSightDeltaRadius;
