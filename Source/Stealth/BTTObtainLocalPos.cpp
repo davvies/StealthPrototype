@@ -44,6 +44,7 @@ EBTNodeResult::Type UBTTObtainLocalPos::ExecuteTask(UBehaviorTreeComponent& owne
 
 				GoToLocalPostion(nav_sys, origin, a_controller, loc);
 			}
+
 			break;
 
 		case TrailFollow::MostTimes:
@@ -55,6 +56,12 @@ EBTNodeResult::Type UBTTObtainLocalPos::ExecuteTask(UBehaviorTreeComponent& owne
 			else {
 				GoToLocalPostion(nav_sys, origin, a_controller, loc);
 			}
+
+			break;
+
+		default: 
+
+			UE_LOG(LogTemp, Warning, TEXT("No agent search state found"));
 
 			break;
 	}

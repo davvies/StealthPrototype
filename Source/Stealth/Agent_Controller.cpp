@@ -23,7 +23,6 @@ AAgent_Controller::AAgent_Controller(FObjectInitializer const& object_init) {
 
     SensoryConfig();
 
-   // UE_LOG(LogTemp, Warning, TEXT("%s"), cachedEvidenceLocations.Num());
 }
 
 void AAgent_Controller::BeginPlay()
@@ -31,7 +30,7 @@ void AAgent_Controller::BeginPlay()
     Super::BeginPlay();
     RunBehaviorTree(p_behaviour_tree);
     p_behaviour_tree_component->StartTree(*p_behaviour_tree);
-    UE_LOG(LogTemp, Warning, TEXT("here"));
+
 }
 
 void AAgent_Controller::OnPossess(APawn* const pawn)
@@ -70,7 +69,7 @@ void AAgent_Controller::SensoryConfig()
 
     sight_sense_config->LoseSightRadius = sight_sense_config->SightRadius + loseSightDeltaRadius;
 
-    sight_sense_config->PeripheralVisionAngleDegrees = FOV; //typical frustrum angle
+    sight_sense_config->PeripheralVisionAngleDegrees = FOV; //typical frustrum angle (90')
 
     sight_sense_config->SetMaxAge(maxAge);
 

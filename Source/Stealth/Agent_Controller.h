@@ -15,7 +15,7 @@ public:
 
 	AAgent_Controller(FObjectInitializer const& object_init = FObjectInitializer::Get());
 
-	void BeginPlay() override; //
+	void BeginPlay() override; 
 
 	void OnPossess(APawn* const pawn) override; 
 
@@ -49,14 +49,19 @@ private:
 	//Set-up for sensory config
 	void SensoryConfig();
 
-	const float sightRadius = 500.0f;
+	const float sightRadius = 500.0f; //Spatial awareness
 
-	const float loseSightDeltaRadius = 50.0f;
+	const float loseSightDeltaRadius = 50.0f; //scalar of sight loss
 
-	const float FOV = 90.0f;
+	const float FOV = 90.0f; //Frustum angle
 
-	const float maxAge = 5.0f;
+	const float maxAge = 5.0f; //Expiration for vision event
 
-	const float persistanceVisionFactor = 1000.0f;
+	/*
+	* This factor is for the strength of persistence vision.
+	* For example, if the player jumps over the head of an agent the higher the value,
+	* the less likely the agent will lose the player
+	*/
+	const float persistanceVisionFactor = 1000.0f; 
 
 };
